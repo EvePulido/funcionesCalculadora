@@ -1,0 +1,72 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+
+header {
+  text-align: center;
+  padding:30px; 
+  background-color: #273142;
+  color:azure;
+}
+
+body {
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+div {
+    background-color: #e2e9f5;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 9%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15% ;
+}
+
+h4 {
+    color:darkslateblue;
+}
+
+form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+label {
+    margin: px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#botonSumar {
+    margin: 4px;
+} 
+#botonRestar {
+    margin: 4px;
+}
+#botonMultiplicar {
+    margin: 4px;
+}
+#botonDividir {
+    margin: 4px;
+}
+#botonLimpiar {
+    margin: 4px;
+    
+}
+
+span {
+    padding: 10px;
+    margin-bottom: 30px;
+}
