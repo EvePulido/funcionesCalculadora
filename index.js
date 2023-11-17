@@ -55,7 +55,7 @@
 function suma(input1,input2) {
     input1 = parseInt(document.getElementById("numero1").value);
     input2 = parseInt(document.getElementById("numero2").value);
-    resultado = input1 + input2;
+    let resultado = input1 + input2;
     document.getElementById("espacioResultado").innerHTML = resultado;
 }
 
@@ -83,3 +83,46 @@ function division(input1,input2) {
 function limpiar () {
     document.getElementById("formulario").reset ();
 }
+
+let boton = document.querySelector('.botonClick');
+
+// Eventos del mouse
+                       // evento que va a escuchar , la funcion que va a ejecutarse
+boton.addEventListener('click', function() {
+    console.log('Dimos clic en el botón.');
+    boton.classList.add('botonVerde'); //.add cambia la clase, lo corre y ya no modifica nada, .toggle hace el cambio entre clases
+});
+
+boton.addEventListener('mouseover', function() {
+    console.log('Estamos sobre el botón');
+    
+});
+
+boton.addEventListener('mouseout', function() {
+    console.log('Salí del botón');
+    
+});
+
+// Eventos en el teclado
+
+window.addEventListener('keydown', (e) =>{
+    console.log('Pulsó una teclado');
+    console.log(String.fromCharCode(e.keyCode));
+});
+
+window.addEventListener('keypress', (e) =>{
+    console.log('Presioné una tecla');
+});
+
+window.addEventListener('keyup', (e) =>{
+    console.log('Dejé de presionar una letra');
+});
+
+window.addEventListener('load', () =>{
+    console.log('Terminé de cargar la página.');
+});
+
+// let botonAgregar = document.querySelector('.botonAgregar');
+// botonAgregar.addEventListener('click', function() {
+   
+// });
